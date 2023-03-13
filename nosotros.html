@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio Picone</title>
+    <link rel="shortcut icon" href="img/icono.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">INICIO</a>
+            <a href="/index.html#servicios">SERVICIOS</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="nosotros.html#contacto">CONTACTO</a>
+            <a href="https://api.whatsapp.com/send?phone=5492281575503&text=Hola,%20me%20contacto%20a%20trav%C3%A9s%20de%20su%20web,%20necesito%20mas%20informaci%C3%B3n%20sobre%20sus%20servicios.">WHATSAPP</a>
+        </nav>
+        <section class="textos-header">
+            <h2>Un laboratorio de confianza con mas de 30 años en el mercado</h2>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="nosotros">
+            <h2 class="titulo">Nosotros</h2>
+                <img class="imagennosotros" src="img/lateral.webp">
+                <h2 class="subtitulos" id="historia">Historia</h2>
+                <div class="textosnosotros">
+                    <p>El laboratorio Picone fue creado el 17 de septiembre 1990 por su actual <b>Director Técnico Ing. Agr. Raúl Eduardo Picone</b> y con el incondicional apoyo de su socio <b>Lic. Pedro José Ibañez</b> y de la <b>Semillera Jauregui SRL.</b></p>
+                    <p>Brinda, desde entonces, servicios a los productores agropecuarios de la ciudad de Azul y la provincia de Buenos Aires.</p>
+                    <p>Desde 1990 hasta septiembre de 2011 el laboratorio estuvo compartiendo las instalaciones de Semillera Jauregui SRL. Actualmente ocupa sus nuevas instalaciones sita en calle Olavarría 1660 de la ciudad de Azul, a metros de la Ruta Nacional Nro. 3.</p>
+                    <p>Durante el año 2020 y en 2021 viene llevando a cabo un ambicioso plan de inversiones cuyo objetivo es actualizar tecnología e incrementar la capacidad de repuesta.</p>
+                    <p>El laboratorio aplica Normas IRAM en las metodologías; actualmente está incorporando la implementación del Sistema de Gestión de Calidad ISO 17025.</p>
+                </div>
+                <h2 class="subtitulos">Quienes somos</h2>
+                <div class="textosnosotros">
+                    <p>Bajo la Dirección Técnica del Ing. Agr. Raúl Eduardo Picone, se desempeña un equipo profesional constituido por Ingenieros Agrónomos como Analistas de Laboratorio y personal Ayudante de Laboratorio, de comprobada experiencia en los distintos servicios que se ofrecen.</p>
+                    <p>Glesa Consultora, compuesta por profesionales con más de 30 años de experiencia en el rubro productivo y de gestión, trabaja en la Gestión integral; en nuevas técnicas analíticas, en planes de inversión y ampliación del Laboratorio Picone.</p>
+                </div>
+                <h2 class="subtitulos">Misión</h2>
+                <div class="textosnosotros">
+                    <p>Brindar un servicio de calidad y resultados confiables a los productores agropecuarios, contribuyendo de manera personalizada a mejorar el rendimiento y la fertilización del suelo.</p>
+                </div>    
+                <h2 class="subtitulos">Visión</h2>
+                <div class="textosnosotros">
+                    <p>Liderar el mercado de servicios de análisis de semillas, suelos, agua y alimentos; aumentando la cantidad y diversidad de análisis realizados.</p>
+                    <p>Ser una empresa líder en el mercado de servicios de análisis agropecuarios, integrando la innovación tecnológica con nuevos servicios y bajo normas nacionales e internacionales.</p>
+                </div>
+        </section>
+
+        <section class="metodos-contacto">
+                <h2 class="titulo" id="contacto">Contacto</h2>
+                <section class="formulario-contacto">
+                <div class="container">
+                    <h2 class="texto-formulario">Formulario de contacto</h2>
+                    <form target="_blank" action="https://formsubmit.co/f6b903803b5e7ffdb3c06348b0713053" method="POST">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required/>
+                        <label for="apellidos">Telefono</label>
+                        <input type="number" name="Teléfono" id="number" placeholder="Número" required/>
+                        <label for="email" >Email</label>
+                        <input type="email" name="Correo electronico" id="email" placeholder="Correo electronico" required />
+                        <label for="asunto">Asunto</label>
+                        <input type ="text" name="Asunto" id="asunto" placeholder="Asunto"/>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" for="mensaje" placeholder="Describe tu consulta - Maximo 300 carácteres" maxlength="300" required></textarea>
+                        <input type="submit" onclick="mialerta()" name="enviar" value="Enviar formulario"/>
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="¡Nuevo contacto desde la web!">
+                         <input type="hidden" name="_autoresponse" value="Hemos recibido tu mensaje, te responderemos a la brevedad, atentamente Laboratorio Picone.">
+                         <input type="hidden" name="_captcha" value="false">                      
+                         <p>Una vez rellenado el formulario nos pondremos en contacto con ud.</p>
+                      <script>
+                        function mialerta() {  
+                            alert("Sera redigirido a la brevedad");
+                        } 
+                    </script>
+                    </form>
+                  </div>
+                </section>                
+        </section>
+    
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Email</h4>
+                <img src="img/gmail.webp">
+                <a class="txtfooter" href="mailto:labpicone@hotmail.com?subject=Requiero%20mas%20informaci%C3%B3n">lsinglesdenegocios@gmail.com</a>
+            </div>
+            <div class="content-foo">
+                <h4>Whatsapp</h4>
+                <img src="img/whatsapp.webp">
+                <a class="txtfooter" target="_blank" href="https://api.whatsapp.com/send?phone=5492281575503&text=Hola,%20me%20contacto%20a%20trav%C3%A9s%20de%20su%20web,%20necesito%20mas%20informaci%C3%B3n%20sobre%20sus%20servicios.">2281-575503</a>
+            </div>
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <img src="img/map.webp">
+                <a class="txtfooter" target="_blank" href="https://goo.gl/maps/C2Yxe32STYrk58hC9">Olavarria 1660, Azul, Buenos Aires.</a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; 2022 Laboratorio Picone</h2>  
+    </footer>
+
+</body>
+</html>

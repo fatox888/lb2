@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.titulo {
+    color: #222122b4;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 950px;
+    background: #474145;
+    background: url(../img/portada2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(68, 68, 68, 0.356);
+    padding: 15px 0px 15px 15px;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 650px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color:rgba(31, 29, 29, 0.842);
+    
+}
+
+/* Servicios */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subtituloservicios{
+    text-align: left;
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+.imgservicios{
+    vertical-align: -10px;
+}
+
+.imagen-about-us{
+    width: 60%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 68%;
+    border-spacing: 100cm;
+}
+
+.contenido-textos h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contenido-textos h3 span{
+    background: #EF0004;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+.masinfo{
+    padding: 0 5px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    line-height: 13px;
+}
+
+.dplantilla{
+    color: rgb(219, 29, 29);
+    font-weight: 600;
+    vertical-align: 5px;
+    text-decoration: none;
+    background-image: url(/img/pdf.png);
+}
+
+.dplantilla:hover{
+    color: rgba(240, 1, 1, 0.5);
+    text-decoration: underline;
+}
+
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 0, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #e9efff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    color: #bdb6b6;
+}
+
+.txtfooter{
+    color: #fff;
+    text-decoration: none;
+}
+
+.txtfooter:hover{
+    color: rgba(255, 255, 255, 0.432);
+    text-decoration: none;
+}
+
+/* NOSOTROS.HTML  */
+
+/* NOSOTROS  */
+
+.imagennosotros{
+    width: 790px;
+    height: 500px;
+    padding-bottom: 25px;
+    text-align: center;    
+}
+
+.subtitulos{
+    font-size: 20px;
+    display: block;
+    color: rgba(39, 38, 38, 0.945);
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+}
+
+.textosnosotros {
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+
+/* CONTACTO */
+
+.metodos-contacto{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.formulario-contacto{
+    text-align: center;
+}
+
+form{
+	width:600px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgba(204, 204, 204, 0.9);
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],form input[type="number"],form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #181616;
+	border-radius:5px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:900px){
+    .contenedor{
+        width: 80%;
+    }
+
+    nav{
+        font-size: medium;
+        text-decoration: dotted;
+    }
+
+    header {
+        width: 100%;
+        height: 950px;
+        background: #474145;
+        /* Viejos */
+        background: -webkit-linear-gradient(to right, hsla(340, 15%, 35%, 0.0), hsla(340, 15%, 35%, 0)), url(../img/portada2.webp);
+        /* Chrome */
+        background: linear-gradient(to right, hsla(340, 15%, 35%, 0.0), hsla(340, 15%, 35%, 0)), url(../img/portada2.webp);
+        /* Otros */
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        padding-top: 40px;
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+
+    .galeria-port{
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+
+    .imagen-port{
+        width: 55%;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+    /* Nosotros */
+
+    form{
+        width:200px;
+        padding:16px;
+    }
+
+}
+

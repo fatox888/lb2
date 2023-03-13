@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio Picone</title>
+    <link rel="shortcut icon" href="img/icono.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdf32cac4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a  href="#">INICIO</a>
+            <a  href="#servicios">SERVICIOS</a>
+            <a  href="nosotros.html">NOSOTROS</a>
+            <a  href="nosotros.html#contacto">CONTACTO</a>
+            <a href="https://api.whatsapp.com/send?phone=5492281575503&text=Hola,%20me%20contacto%20a%20trav%C3%A9s%20de%20su%20web,%20necesito%20mas%20informaci%C3%B3n%20sobre%20sus%20servicios.">WHATSAPP</a>
+        </nav>
+        <section class="textos-header">
+            <h2></h2>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="servicios">
+            <h2 class="titulo">Nuestros servicios</h2>
+            <h3 class="subtituloservicios">Para los servicios ofrecidos disponemos de:</h3>
+            <p><img class="imgservicios" src="img/instrumental.webp"> 
+                Instrumental de última generación</p>
+            <p><img class="imgservicios" src="img/metodologias.webp"> 
+                Metodologías adecuadas a la zona</p>
+            <p><img class="imgservicios" src="img/velocidad.webp"> 
+                Rapidez y precisión en los resultados analíticos</p>
+            <p><img class="imgservicios" src="img/personal.webp"> 
+                Personal en permanente capacitación</p>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/svg.svg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Semillas</h3>
+                    <button type="button" class="collapsible"> + Mas Información</button>
+                        <div class="masinfo">
+                                <p>- Calidad Comercial</p>
+                                <p>- Calidad Física</p>
+                                <p>- Calidad Fisiológica</p>
+                                <p>- Pureza Varietal</p>
+                    </div>
+                    <h3><span>2</span>Suelos</h3>
+                    <button type="button" class="collapsible"> + Mas Información</button>
+                        <div class="masinfo">
+                            <p>- pH</p>
+                            <p>- Conductividad Eléctrica</p>
+                            <p>- Humedad</p>
+                            <p>- Materia Orgánica</p>
+                            <p>- Textura</p>
+                            <p>- Nitratos</p>
+                            <p>- Sulfatos</p>
+                            <p>- Fósforo Asimilable</p>
+                            <p>- Nitrógeno Total </p>
+                            <p>- Nitrogeno Anaeróbico</p>
+                            <p>- Nan</p>
+                            <img src="img/descarga.webp">
+                            <a class="dplantilla" target="_blank" href="plantilla.pdf">Descargar plantilla</a>
+                            
+                            </div>
+                    <h3><span>3</span>Patologia</h3>
+                    <button type="button" class="collapsible"> + Mas Información</button>
+                        <div class="masinfo">
+                            <p>- Semillas</p>
+                            <p>- Tejido Vegetal</p>
+                            </div>
+                    <h3><span>4</span>Aguas</h3>
+                    <button type="button" class="collapsible"> + Mas Información</button>
+                        <div class="masinfo">
+                            <p>- Proximamente</p>
+                            </div>
+                    <h3><span>5</span>Alimentos</h3>
+                    <button type="button" class="collapsible"> + Mas Información</button>
+                        <div class="masinfo">
+                            <p>- Proximamente</p>
+                            </div>
+                    <h3><span>6</span>Asesoramiento</h3>  
+                    <button type="button" class="collapsible"> + Mas Información</button>
+                        <div class="masinfo">
+                            <p>Brindamos asesoramiento constante y personalizado de alta calidad a través de nuestros medios de contacto</p>
+                            </div>   
+
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+                        
+                        for (i = 0; i < coll.length; i++) {
+                          coll[i].addEventListener("click", function() {
+                            this.classList.toggle("true");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                              content.style.display = "none";
+                            } else {
+                              content.style.display = "block";
+                            }
+                          });
+                        }
+                        </script>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio" id="acreditaciones">
+            <div class="contenedor">
+                <h2 class="titulo">Avales y acreditaciones  </h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/1.webp" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Programa de Interlaboratorios para Suelos Agropecuarios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/2.webp" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Socio activo de la Asociación Argentina de la Ciencia del Suelo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/3.webp" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Laboratorio adherido al S.A.M.L.A., entidad dependiente de la SAGyA</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/4.webp" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Laboratorio acreditado para emitir Certificados de Análisis de Semillas válido para el MERCOSUR. Inscripto en RNCyFS Nro I/813</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/5.webp" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Socio fundador de la Asociación de Laboratorios Agropecuarios Privados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Email</h4>
+                <img src="img/gmail.webp">
+                <a class="txtfooter" href="mailto:labpicone@hotmail.com?subject=Requiero%20mas%20informaci%C3%B3n">labpicone@hotmail.com</a>
+            </div>
+            <div class="content-foo">
+                <h4>Whatsapp</h4>
+                <img src="img/whatsapp.webp">
+                <a class="txtfooter" target="_blank" href="https://api.whatsapp.com/send?phone=5492281575503&text=Hola,%20me%20contacto%20a%20trav%C3%A9s%20de%20su%20web,%20necesito%20mas%20informaci%C3%B3n%20sobre%20sus%20servicios.">2281-575503</a>
+            </div>
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <img src="img/map.webp">
+                <a class="txtfooter" target="_blank" href="https://goo.gl/maps/C2Yxe32STYrk58hC9">Olavarria 1660, Azul, Buenos Aires.</a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; 2022 Laboratorio Picone</h2>  
+    </footer>
+
+</body>
+
+</html>
